@@ -11,4 +11,4 @@ grunt watch   该命令用来监听指定的文件的变动，这里监听了js�
 grunt watch:script 监听JS文件
 grunt watch:css   监听scss文件
 grunt uglify  合并&压缩JS
-grunt compass 编译SCSS文件，生成压缩后的CSS
+grunt compass 编译SCSS文件，生成压缩后的CSS.
