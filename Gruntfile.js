@@ -8,8 +8,8 @@ module.exports = function(grunt){
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: ['src/*.js'],//['src/1.js','src/3.js','src/2.js']
-                dest: 'build/<%= pkg.name %>.min.js'
+                src: ['../src/*.js'],//['src/1.js','src/3.js','src/2.js']
+                dest: '../build/<%= pkg.name %>.min.js'
             }       
         },        
         compass: {                  // Task
@@ -24,22 +24,22 @@ module.exports = function(grunt){
             },
             dev: {                    // Another target
               options: {
-                sassDir: 'sass',
-                cssDir: 'css'
+                sassDir: '../sass',
+                cssDir: '../css'
               }
             }
           },
         watch: {
             // watch方法可以监听js和css的改动 然后执行对应的编译方法
          scripts: {
-            files: '*src/*.js',
+            files: '../src/*.js',
             tasks: ['jshint','uglify'],
             options: {
               interrupt: true,
             },
           },
           css: {
-            files: 'sass/*.scss',
+            files: '../sass/*.scss',
             tasks: ['compass'],
             options: {
               livereload: true,
@@ -55,14 +55,14 @@ module.exports = function(grunt){
             },
             dist: {
                 //用于连接的文件
-                src: ['src/*.js'],
+                src: ['../src/*.js'],
                 //返回的JS文件位置
                 dest: 'build/<%= pkg.name %>.js'
             }
         },
         jshint: {
             //定义用于检测的文件
-            files: ['src/*.js'],
+            files: ['../src/*.js'],
             //配置JSHint (参考文档:http://www.jshint.com/docs)
             options: {
                 //你可以在这里重写jshint的默认配置选项
