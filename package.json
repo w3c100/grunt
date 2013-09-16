@@ -1,0 +1,14 @@
+{
+  "name": "testProject",
+  "version": "0.1.0",
+  "description": "",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",//js检测
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",//js混淆
+    "grunt-contrib-compass": "~0.5.0",//css压缩
+    "grunt-contrib-concat": "~0.3.0",//文件合并
+    "grunt-contrib-watch": "~0.5.3"//监听改动
+  }
+}
